@@ -1,4 +1,9 @@
 @extends('Site.layout.main')
 @section('main-content')
-<h1>صفحه اصلی</h1>
+
+<div>
+<h1><div>
+</div>صفحه اصلی</h1>
+
+</div>
 @endsection

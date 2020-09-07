@@ -12,11 +12,12 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/index', function () {
     return view('Site.index');
 });
+// Route::get('/index', function () {
+//     return view('Site.index');
+// });
+Route::get('/index', 'Homecontroller@showHome')->name('ShowHomePage');
 
 Auth::routes();
 

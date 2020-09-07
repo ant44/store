@@ -7,5 +7,12 @@ use App\Http\Controllers\Controller;
 
 class Homecontroller extends Controller
 {
-    //
+
+
+    public function showHome()
+    {
+        $namee = "kjkjkjkjkjk";
+
+        return view('Site.index',compact('namee'));
+    }
 }
