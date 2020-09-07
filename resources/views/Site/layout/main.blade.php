@@ -26,17 +26,17 @@
     <meta name="msapplication-TileColor" content="#cc9966">
     <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
-    <link rel="stylesheet" href="assets/vendor/line-awesome/line-awesome/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" href="{{url('Site/line-awesome.min.css')}}">
     <!-- Plugins CSS File -->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="assets/css/bootstrap-rtl.min.css">
-    <link rel="stylesheet" href="assets/css/plugins/owl-carousel/owl.carousel.css">
-    <link rel="stylesheet" href="assets/css/plugins/magnific-popup/magnific-popup.css">
-    <link rel="stylesheet" href="assets/css/plugins/jquery.countdown.css">
+    <link rel="stylesheet" href="{{url('Site/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{url('Site/css/bootstrap-rtl.min.css')}}">
+    <link rel="stylesheet" href="{{url('Site/css/plugins/owl-carousel/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{url('Site/css/plugins/magnific-popup/magnific-popup.css')}}">
+    <link rel="stylesheet" href="{{url('Site/css/plugins/jquery.countdown.css')}}">
     <!-- Main CSS File -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/skins/skin-demo-4.css">
-    <link rel="stylesheet" href="assets/css/demos/demo-4.css">
+    <link rel="stylesheet" href="{{url('Site/css/style.css')}}">
+    <link rel="stylesheet" href="{{url('Site/css/skins/skin-demo-4.css')}}">
+    <link rel="stylesheet" href="{{url('Site//css/demos/demo-4.css')}}">
 </head>
 
 <body>
@@ -82,19 +82,19 @@
 
 
     <!-- Plugins JS File -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/js/jquery.hoverIntent.min.js"></script>
-    <script src="assets/js/jquery.waypoints.min.js"></script>
-    <script src="assets/js/superfish.min.js"></script>
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <script src="assets/js/bootstrap-input-spinner.js"></script>
-    <script src="assets/js/jquery.plugin.min.js"></script>
-    <script src="assets/js/jquery.magnific-popup.min.js"></script>
-    <script src="assets/js/jquery.countdown.min.js"></script>
+    <script src="{{url('Site/js/jquery.min.js')}}"></script>
+    <script src="{{url('Site/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url('Site/js/jquery.hoverIntent.min.js')}}"></script>
+    <script src="{{url('Site/js/jquery.waypoints.min.js')}}"></script>
+    <script src="{{url('Site/js/superfish.min.js')}}"></script>
+    <script src="{{url('Site/js/owl.carousel.min.js')}}"></script>
+    <script src="{{url('Site/js/bootstrap-input-spinner.js')}}"></script>
+    <script src="{{url('Site/js/jquery.plugin.min.js')}}"></script>
+    <script src="{{url('Site/js/jquery.magnific-popup.min.js')}}"></script>
+    <script src="{{url('Site/js/jquery.countdown.min.js')}}"></script>
     <!-- Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/demos/demo-4.js"></script>
+    <script src="{{url('Site/js/main.js')}}"></script>
+    <script src="{{url('Site/js/demos/demo-4.js')}}"></script>
 </body>
 
 </html>
