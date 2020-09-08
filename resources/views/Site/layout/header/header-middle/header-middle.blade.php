@@ -6,7 +6,7 @@
         </button>
 
         <a href="index10.html" class="logo">
-            <img src="assets/images/demos/demo-4/logo.png" alt="Molla Logo" width="105" height="25">
+            <img src="{{url('Site/images/demos/demo-4/logo.png')}}" alt="Molla Logo" width="105" height="25">
         </a>
     </div><!-- End .header-left -->
 
@@ -89,7 +89,7 @@
 
                         <figure class="product-image-container">
                             <a href="product.html" class="product-image">
-                                <img src="assets/images/products/cart/product-1.jpg" alt="محصول">
+                                <img src="{{url('Site/images/products/cart/product-1.jpg')}}" alt="محصول">
                             </a>
                         </figure>
                         <a href="#" class="btn-remove" title="حذف محصول"><i class="icon-close"></i></a>
@@ -110,7 +110,7 @@
 
                         <figure class="product-image-container">
                             <a href="product.html" class="product-image">
-                                <img src="assets/images/products/cart/product-2.jpg" alt="محصول">
+                                <img src="{{url('Site/images/products/cart/product-2.jpg')}}" alt="محصول">
                             </a>
                         </figure>
                         <a href="#" class="btn-remove" title="حذف محصول"><i class="icon-close"></i></a>

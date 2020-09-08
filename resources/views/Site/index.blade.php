@@ -1,4 +1,7 @@
 @extends('Site.layout.main')
+ذ@section('pageTitele')
+    ادمین
+@endsection
 @section('main-content')
 
 <div>

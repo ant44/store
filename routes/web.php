@@ -19,6 +19,8 @@ Route::get('/', function () {
 // });
 Route::get('/index', 'Homecontroller@showHome')->name('ShowHomePage');
 
+Route::get('/adminPanel/login','AdminPanel\LoginAndRegisterController@login')->name('adminLogin');
+
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
