@@ -19,15 +19,16 @@
                         </ul>
                         <div class="tab-content" id="tab-content-5">
                             <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
-                                <form action="#">
+                                <form action="{{ route('login') }}">
+                                    @csrf
                                     <div class="form-group">
                                         <label for="singin-email">نام کاربری یا آدرس ایمیل *</label>
-                                        <input type="text" class="form-control" id="singin-email" name="singin-email" required>
+                                        <input type="email" class="form-control" id="email" name="email" required value="{{ old('email') }}">
                                     </div><!-- End .form-group -->
 
                                     <div class="form-group">
                                         <label for="singin-password">رمز عبور *</label>
-                                        <input type="password" class="form-control" id="singin-password" name="singin-password" required>
+                                        <input type="password" class="form-control" id="password" name="password" required>
                                     </div><!-- End .form-group -->
 
                                     <div class="form-footer">
@@ -37,12 +38,13 @@
                                         </button>
 
                                         <div class="custom-control custom-checkbox">
-                                            <input type="checkbox" class="custom-control-input" id="signin-remember">
-                                            <label class="custom-control-label" for="signin-remember">مرا به خاطر
+                                            <input name="remember" type="checkbox" class="custom-control-input" id="remember">
+                                            <label class="custom-control-label" for="remember">مرا به خاطر
                                                 بسپار</label>
                                         </div><!-- End .custom-checkbox -->
-
-                                        <a href="#" class="forgot-link">فراموشی رمز عبور؟</a>
+                                        @if (Route::has('password.request'))
+                                        <a href="{{ route('password.request') }}" class="forgot-link">فراموشی رمز عبور؟</a>
+                                        @endif
                                     </div><!-- End .form-footer -->
                                 </form>
                                 <div class="form-choice">
@@ -64,15 +66,32 @@
                                 </div><!-- End .form-choice -->
                             </div><!-- .End .tab-pane -->
                             <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-                                <form action="#">
+                                <form method="POST" action="{{ route('register') }}">
+                                    @csrf
                                     <div class="form-group">
-                                        <label for="register-email">آدرس ایمیل شما *</label>
-                                        <input type="email" class="form-control" id="register-email" name="register-email" required>
+                                        <label for="name"> نام شما *</label>
+                                        <input type="text" class="form-control" id="name" name="name" required  value="{{ old('name') }}"">
+                                    </div>
+
+                                    <!-- End .form-group -->
+                                    <div class="form-group">
+                                        <label for="mobile_number"> تلفن شما *</label>
+                                        <input type="text" class="form-control" id="phone_number" name="phone_number" required  min="12" max="12" value="{{ old('phone_number') }}"">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="email">آدرس ایمیل شما *</label>
+                                        <input type="email" class="form-control" id="email" name="email" required value="{{ old('email') }}">
                                     </div><!-- End .form-group -->
 
                                     <div class="form-group">
-                                        <label for="register-password">رمز عبور *</label>
-                                        <input type="password" class="form-control" id="register-password" name="register-password" required>
+                                        <label for="password">رمز عبور *</label>
+                                        <input type="password" class="form-control" id="password" name="password" required >
+                                    </div><!-- End .form-group -->
+
+                                    <div class="form-group">
+                                        <label for="password">تکرار رمز عبور *</label>
+                                        <input type="password" class="form-control" id="password_confirmatio" name="password_confirmatio" required >
                                     </div><!-- End .form-group -->
 
                                     <div class="form-footer">
