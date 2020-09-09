@@ -86,10 +86,10 @@
                                         <input type="text" class="form-control" minlength="11" maxlength="11" id="mobile" name="mobile"  required>
                                     </div>
 
-                                    {{-- <div class="form-group">
+                                    <div class="form-group">
                                         <label for="email">آدرس ایمیل شما *</label>
                                         <input type="email" class="form-control" id="email" name="email" required>
-                                    </div><!-- End .form-group --> --}}
+                                    </div><!-- End .form-group -->
 
                                     <div class="form-group">
                                         <label for="password">رمز عبور *</label>
