@@ -23,7 +23,7 @@
     <meta name="apple-mobile-web-app-title" content="Molla">
     <meta name="application-name" content="Molla">
     <meta name="msapplication-TileColor" content="#cc9966">
-    <meta name="msapplication-config" content="assets/images/icons/browserconfig.xml">
+    <meta name="msapplication-config" content="Site/images/icons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="{{url('Site/line-awesome.min.css')}}">
     <!-- Plugins CSS File -->
@@ -63,7 +63,7 @@
 
         <footer class="footer">
             <div class="footer-top cta bg-image bg-dark pt-4 pb-5 mb-0"
-                style="background-image: url(assets/images/demos/demo-4/bg-5.jpg);">
+                style="background-image: url(Site/images/demos/demo-4/bg-5.jpg);">
                  @include('Site.layout.footer.footer-top.footer-top')
             </div><!-- End .cta -->
             <div class="footer-middle">

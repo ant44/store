@@ -138,7 +138,7 @@
             <div class="row no-gutters bg-white newsletter-popup-content">
                 <div class="col-xl-3-5col col-lg-7 banner-content-wrap">
                     <div class="banner-content text-center">
-                        <img src="assets/images/popup/newsletter/logo.png" class="logo" alt="logo" width="60" height="15">
+                        <img src="Site/images/popup/newsletter/logo.png" class="logo" alt="logo" width="60" height="15">
                         <h2 class="banner-title">دریافت <span>25<light>%</light></span> تخفیف</h2>
                         <p>با عضویت در خبرنامه فروشگاه ما، یک تخفیف 25 درصدی دریافت کنید و از جدیدترین تخفیف ها مطلع
                             شوید</p>
@@ -158,7 +158,7 @@
                     </div>
                 </div>
                 <div class="col-xl-2-5col col-lg-5 ">
-                    <img src="assets/images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
+                    <img src="Site/images/popup/newsletter/img-1.jpg" class="newsletter-img" alt="newsletter">
                 </div>
             </div>
         </div>

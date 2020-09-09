@@ -38,7 +38,7 @@
                             <div class="demo-list">
                                 <div class="demo-item">
                                     <a href="index10.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/3.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/3.jpg);"></span>
                                         <span class="demo-title">01 - فروشگاه لوازم الکترونیکی</span>
                                     </a>
 
@@ -46,161 +46,161 @@
 
                                 <div class="demo-item">
                                     <a href="index-2-2.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/2.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/2.jpg);"></span>
                                         <span class="demo-title">02 - فروشگاه مبلمان</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item">
                                     <a href="index-3.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/1.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/1.jpg);"></span>
                                         <span class="demo-title">03 - فروشگاه مبلمان</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item">
                                     <a href="index-4.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/4.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/4.jpg);"></span>
                                         <span class="demo-title">04 - فروشگاه لوازم الکترونیکی</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item">
                                     <a href="index-5.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/5.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/5.jpg);"></span>
                                         <span class="demo-title">05 - فروشگاه مد و لباس</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item">
                                     <a href="index-6.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/6.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/6.jpg);"></span>
                                         <span class="demo-title">06 - فروشگاه مد و لباس</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item">
                                     <a href="index-7.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/7.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/7.jpg);"></span>
                                         <span class="demo-title">07 - فروشگاه مد و لباس</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item">
                                     <a href="index-8.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/8.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/8.jpg);"></span>
                                         <span class="demo-title">08 - فروشگاه مد و لباس</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item">
                                     <a href="index-9.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/9.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/9.jpg);"></span>
                                         <span class="demo-title">09 - فروشگاه مد و لباس</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item">
                                     <a href="index-10.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/10.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/10.jpg);"></span>
                                         <span class="demo-title">10 - فروشگاه کفش</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-11.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/11.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/11.jpg);"></span>
                                         <span class="demo-title">11 - فروشگاه مبل</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-12.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/12.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/12.jpg);"></span>
                                         <span class="demo-title">12 - فروشگاه مد</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-13.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/13.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/13.jpg);"></span>
                                         <span class="demo-title">13 - بازار</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-14.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/14.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/14.jpg);"></span>
                                         <span class="demo-title">14 - بازار تمام عرض</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-15.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/15.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/15.jpg);"></span>
                                         <span class="demo-title">15 - مد و زیبایی</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-16.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/16.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/16.jpg);"></span>
                                         <span class="demo-title">16 - مد و زیبایی</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-17.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/17.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/17.jpg);"></span>
                                         <span class="demo-title">17 - فروشگاه مد و لباس</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-18.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/18.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/18.jpg);"></span>
                                         <span class="demo-title">18 - فروشگاه مد و لباس (با سایدبار)</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-19.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/19.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/19.jpg);"></span>
                                         <span class="demo-title">19 - فروشگاه بازی</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-20.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/20.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/20.jpg);"></span>
                                         <span class="demo-title">20 - فروشگاه کتاب</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-21.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/21.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/21.jpg);"></span>
                                         <span class="demo-title">21 - فروشگاه ورزشی</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-22.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/22.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/22.jpg);"></span>
                                         <span class="demo-title">22 - فروشگاه ابزار</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-23.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/23.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/23.jpg);"></span>
                                         <span class="demo-title">23 - -فروشگاه مد با نوبار سمت راست</span>
                                     </a>
                                 </div><!-- End .demo-item -->
 
                                 <div class="demo-item hidden">
                                     <a href="index-24.html">
-                                        <span class="demo-bg" style="background-image: url(assets/images/menu/demos/24.jpg);"></span>
+                                        <span class="demo-bg" style="background-image: url(Site/images/menu/demos/24.jpg);"></span>
                                         <span class="demo-title">24 - فروشگاه ورزشی</span>
                                     </a>
                                 </div><!-- End .demo-item -->
@@ -273,7 +273,7 @@
                             <div class="col-md-4">
                                 <div class="banner banner-overlay">
                                     <a href="category.html" class="banner banner-menu">
-                                        <img src="assets/images/menu/banner-1.jpg" alt="بنر">
+                                        <img src="{{url('Site/images/menu/banner-1.jpg')}}" alt="بنر">
 
                                         <div class="banner-content banner-content-top">
                                             <div class="banner-title text-white">آخرین
@@ -311,7 +311,7 @@
                             <div class="col-md-6">
                                 <div class="banner banner-overlay">
                                     <a href="category.html">
-                                        <img src="assets/images/menu/banner-2.jpg" alt="بنر">
+                                        <img src="{{url('Site/images/menu/banner-2.jpg')}}" alt="بنر">
 
                                         <div class="banner-content banner-content-bottom">
                                             <div class="banner-title text-white">محصولات
