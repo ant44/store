@@ -82,8 +82,8 @@
 
                                     <!-- End .form-group -->
                                     <div class="form-group">
-                                        <label for="mobile_number"> تلفن شما *</label>
-                                        <input type="text" class="form-control" id="phone_number" name="phone_number" required  maxlength="11" maxlength="11" >
+                                        <label for="mobile"> تلفن شما *</label>
+                                        <input type="text" class="form-control" minlength="11" maxlength="11" id="mobile" name="mobile"  required>
                                     </div>
 
                                     {{-- <div class="form-group">
