@@ -19,6 +19,11 @@
                         </ul>
                         <div class="tab-content" id="tab-content-5">
                             <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
+
+                                @foreach ($errors->all() as $error)
+                                    {{$error}}
+                                @endforeach
+
                                 <form action="{{ route('login') }}" method="POST">
                                     @csrf
                                     <div class="form-group">
@@ -77,7 +82,7 @@
 
                                     <div class="form-group">
                                         <label for="name"> نام شما *</label>
-                                        <input type="text" class="form-control" id="name" maxlength="255" minlength="3" name="name" required>
+                                        <input type="text" class="form-control" id="name" value="{{ old('name') }} maxlength="255" minlength="3" name="name" required>
                                     </div>
 
                                     <!-- End .form-group -->
