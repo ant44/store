@@ -19,11 +19,11 @@
                         </ul>
                         <div class="tab-content" id="tab-content-5">
                             <div class="tab-pane fade show active" id="signin" role="tabpanel" aria-labelledby="signin-tab">
-                                <form action="{{ route('login') }}">
+                                <form action="{{ route('login') }}" method="POST">
                                     @csrf
                                     <div class="form-group">
-                                        <label for="singin-email">نام کاربری یا آدرس ایمیل *</label>
-                                        <input type="email" class="form-control" id="email" name="email" required value="{{ old('email') }}">
+                                        <label for="mobile">موبایل *</label>
+                                        <input type="mobile" class="form-control" id="mobile" name="mobile" required value="{{ old('mobile') }}">
                                     </div><!-- End .form-group -->
 
                                     <div class="form-group">
@@ -66,33 +66,40 @@
                                 </div><!-- End .form-choice -->
                             </div><!-- .End .tab-pane -->
                             <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
+
+                                @foreach ($errors->all() as $error)
+                                    {{$error}}
+                                @endforeach
+
+
                                 <form method="POST" action="{{ route('register') }}">
                                     @csrf
+
                                     <div class="form-group">
                                         <label for="name"> نام شما *</label>
-                                        <input type="text" class="form-control" id="name" name="name" required  value="{{ old('name') }}"">
+                                        <input type="text" class="form-control" id="name" maxlength="255" minlength="3" name="name" required>
                                     </div>
 
                                     <!-- End .form-group -->
                                     <div class="form-group">
                                         <label for="mobile_number"> تلفن شما *</label>
-                                        <input type="text" class="form-control" id="phone_number" name="phone_number" required  min="12" max="12" value="{{ old('phone_number') }}"">
+                                        <input type="text" class="form-control" id="phone_number" name="phone_number" required  maxlength="11" maxlength="11" >
                                     </div>
 
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <label for="email">آدرس ایمیل شما *</label>
-                                        <input type="email" class="form-control" id="email" name="email" required value="{{ old('email') }}">
-                                    </div><!-- End .form-group -->
+                                        <input type="email" class="form-control" id="email" name="email" required>
+                                    </div><!-- End .form-group --> --}}
 
                                     <div class="form-group">
                                         <label for="password">رمز عبور *</label>
                                         <input type="password" class="form-control" id="password" name="password" required >
                                     </div><!-- End .form-group -->
 
-                                    <div class="form-group">
+                                    {{-- <div class="form-group">
                                         <label for="password">تکرار رمز عبور *</label>
                                         <input type="password" class="form-control" id="password_confirmatio" name="password_confirmatio" required >
-                                    </div><!-- End .form-group -->
+                                    </div><!-- End .form-group --> --}}
 
                                     <div class="form-footer">
                                         <button type="submit" class="btn btn-outline-primary-2">
