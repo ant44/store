@@ -53,10 +53,13 @@
             @include('Site.layout.header.header-bottam.header-bottam')
             </div><!-- End .header-bottom -->
         </header><!-- End .header -->
+           @include('Site.homePage.homePage')
 
-        <main class="main">
+
+           <main class="main">
               @yield('main-content')
-        </main><!-- End .main -->
+
+            </main><!-- End .main -->
 
         <footer class="footer">
             <div class="footer-top cta bg-image bg-dark pt-4 pb-5 mb-0"
