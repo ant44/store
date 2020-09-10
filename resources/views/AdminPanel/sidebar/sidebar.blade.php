@@ -1,4 +1,4 @@
-<aside class="main-sidebar sidebar-dark-primary elevation-4">
+{{-- <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="{{ route('dashboard') }}" class="brand-link">
         <img src="{{ url('AdminPanel/img/AdminLTELogo.png') }}" alt="لوگو  وطن میزبان" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -101,7 +101,7 @@
                             <i class="fas fa-angle-left right"></i>
 
                             {{--                            <span class="badge badge-info right">{{ \App\User::all()->count() }}</span>--}}
-                        </p>
+                        {{-- </p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
@@ -121,30 +121,30 @@
                             <i class="fas fa-angle-left right"></i>
 
                             {{--                            <span class="badge badge-info right">{{ \App\Models\Cart::all()->count() }}</span>--}}
-                        </p>
-                    </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link" id="allCarts">
-                                <i class="far fa-circle nav-icon"></i>
-                                <p>لیست همه سفارشات</p>
-                            </a>
-                        </li>
-                    </ul>
-                </li>
-                <!-- LogOut -->
-                <li class="nav-item" id="sign-out">
-                    <a href="{{ route('logoutUser') }}" class="nav-link">
-                        <i class="nav-icon fas fa-sign-out-alt"></i>
-                        <p>
-                            خروج از سایت
-                        </p>
-                    </a>
-                </li>
+                        {{-- </p>
+                        </a>
+                        <ul class="nav nav-treeview">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link" id="allCarts">
+                                    <i class="far fa-circle nav-icon"></i>
+                                    <p>لیست همه سفارشات</p>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- LogOut -->
+                    <li class="nav-item" id="sign-out">
+                        <a href="{{ route('logoutUser') }}" class="nav-link">
+                            <i class="nav-icon fas fa-sign-out-alt"></i>
+                            <p>
+                                خروج از سایت
+                            </p>
+                        </a>
+                    </li>
 
-            </ul>
-        </nav>
-        <!-- /.sidebar-menu -->
-    </div>
-    <!-- /.sidebar -->
-</aside>
+                </ul>
+            </nav>
+            <!-- /.sidebar-menu -->
+        </div>
+        <!-- /.sidebar -->
+    </aside> --}}

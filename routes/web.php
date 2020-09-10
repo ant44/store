@@ -27,4 +27,4 @@ Route::get('/home', 'HomeController@index')->name('home');
 
 Route::get('/dashboard', 'adminPanel\dashbordController@index')->name('dashboard');
 
-Route::get('/logout', 'Auth\LogoutController@Logout')->name('logout');
+Route::get('/logoutUser', 'Auth\LogoutController@Logout')->name('logoutUser');

@@ -33,7 +33,7 @@ class LoginController extends Controller
      *
      * @var string
      */
-    protected $redirectTo = '/home';
+    protected $redirectTo = '/dashboard';
 
     /**
      * Create a new controller instance.
@@ -75,13 +75,13 @@ class LoginController extends Controller
             return redirect(route('login'))->with('$error', 'شما به این صفحه دسترسی ندارید');
         }
         Auth::login($user);
-        return redirect(route('home'));
+        return redirect(route('dashboard'));
     }
     public function logout()
     {
         //logout user from
-         auth()->logout();
+        auth()->logout();
         //redirect to home page
-        return redirect(route('login'));
+        return redirect()->route('login');
     }
 }
