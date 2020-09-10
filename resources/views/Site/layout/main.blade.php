@@ -53,7 +53,8 @@
             @include('Site.layout.header.header-bottam.header-bottam')
             </div><!-- End .header-bottom -->
         </header><!-- End .header -->
-           @include('Site.homePage.homePage')
+
+             @include('Site.homePage.homePage')
 
 
            <main class="main">

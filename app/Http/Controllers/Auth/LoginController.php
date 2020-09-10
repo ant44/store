@@ -3,9 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
-use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use App\Providers\RouteServiceProvider;
+use App\User;
 use Illuminate\Http\Request;
-use Symfony\Component\VarDumper\Cloner\Data;
+use App\Http\Requests;
+use Illuminate\Foundation\Auth\AuthenticatesUsers;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Session;
 
 
 class LoginController extends Controller
@@ -47,12 +51,30 @@ class LoginController extends Controller
         $data['password'] = $request->password;
 
         // dd($data); تست دریافت متغییر
+        $this->validate(
+            $request,
+            [
+                'mobile' => 'required|max:11|min:11',
+                'password' => 'required'
+            ],
+            [
+                "mobile.required" => 'شماره موبایل الزامی می باشد',
+                'mobile.min' => 'شماره موبایل درست وارد نشده است',
+                'mobile.max' => 'شماره موبایل درست وارد نشده است',
+                'password.required' => 'پسورد درست وارد نشده است'
+            ]
+        );
+        $user = User::where('mobile', $data['password'])->first();
 
+        if (!$user) {
+            return redirect(route('login'))->with('$errors', 'نام کاربری موجود نمیباشد');
+        } elseif (!Hash::check($request->get('password'), $user->password)) {
+            return redirect(route('login'))->with('$errors', 'رمز عبور صحیح نمی باشد');
+        } elseif (!$user->role == 'admin') {
 
-
-
-
-
-
+            return redirect(route('login'))->with('$errors', 'شما به این صفحه دسترسی ندارید');
+        }
+        Auth::login($user);
+        return redirect(route('index'));
     }
 }

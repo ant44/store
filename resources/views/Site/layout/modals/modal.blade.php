@@ -82,7 +82,7 @@
 
                                     <div class="form-group">
                                         <label for="name"> نام شما *</label>
-                                        <input type="text" class="form-control" id="name" value="{{ old('name') }} maxlength="255" minlength="3" name="name" required>
+                                        <input type="text" class="form-control" id="name" maxlength="255" minlength="3"   name="name"  required>
                                     </div>
 
                                     <!-- End .form-group -->
