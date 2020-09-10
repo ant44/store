@@ -19,11 +19,12 @@ Route::get('/', function () {
 // });
 Route::get('/index', 'Homecontroller@showHome')->name('ShowHomePage');
 
-Route::get('/AdminPanel/login','AdminPanel\LoginAndRegisterController@login')->name('adminLogin');
+Route::get('/AdminPanel/login', 'AdminPanel\LoginAndRegisterController@login')->name('adminLogin');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-Route::get('/dashboard', 'AdminPanel\dashboardController@index')->name('dashboard');
-Route::get('/logout', 'Auth\LogoutController@Logout')->name('logout');
 
+Route::get('/dashboard', 'adminPanel\dashbordController@index')->name('dashboard');
+
+Route::get('/logout', 'Auth\LogoutController@Logout')->name('logout');
