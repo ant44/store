@@ -10,7 +10,7 @@ use App\Http\Requests;
 use Illuminate\Foundation\Auth\AuthenticatesUsers;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
-
+use Illuminate\Support\Facades\Hash;
 
 class LoginController extends Controller
 {
@@ -64,17 +64,17 @@ class LoginController extends Controller
                 'password.required' => 'پسورد درست وارد نشده است'
             ]
         );
-        $user = User::where('mobile', $data['password'])->first();
+        $user = User::where('mobile', $data['mobile'])->first();
 
         if (!$user) {
-            return redirect(route('login'))->with('$errors', 'نام کاربری موجود نمیباشد');
+            return redirect(route('login'))->with('$error', 'نام کاربری موجود نمیباشد');
         } elseif (!Hash::check($request->get('password'), $user->password)) {
-            return redirect(route('login'))->with('$errors', 'رمز عبور صحیح نمی باشد');
+            return redirect(route('login'))->with('$error', 'رمز عبور صحیح نمی باشد');
         } elseif (!$user->role == 'admin') {
 
-            return redirect(route('login'))->with('$errors', 'شما به این صفحه دسترسی ندارید');
+            return redirect(route('login'))->with('$error', 'شما به این صفحه دسترسی ندارید');
         }
         Auth::login($user);
-        return redirect(route('index'));
+        return redirect(route('home'));
     }
 }
