@@ -4,6 +4,7 @@ namespace App\Http\Controllers\adminPanel;
 
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Product;
 
 class productController extends Controller
 {
@@ -14,7 +15,8 @@ class productController extends Controller
      */
     public function index()
     {
-        return view('AdminPanel.product.index');
+        $hameye_mahsolat = Product::all();
+        return view('AdminPanel.product.index', compact('hameye_mahsolat'));
     }
 
     /**
@@ -35,7 +37,23 @@ class productController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $this->validate($request, [
+            'title' => ['required', 'min:3', 'max:255'],
+            'category' => ['required'],
+            'price' => ['required'],
+            'product_id' => ['required'],
+            'image' => ['required'],
+            'status' => ['required']
+        ], [
+            'title.required'=>'عنوان محصول الزامی است',
+            'title.min'=>'عنوان محصول نمی تواند کمتر از 3  کارکتر باشد',
+            'title.max'=>'عنوان محصول نمی تواند بیشتر از 255 کارکتر باشد',
+            'category.required'=>'دسته بندی محصول الزامی است',
+            'price.required'=>'قیمت محصول الزامی است',
+            'product_id.required'=>' شناسه محصول الزامی است',
+            'image.required'=>' عکس محصول الزامی است',
+            'status.required'=>' وضعیت محصول الزامی است',
+        ]);
     }
 
     /**

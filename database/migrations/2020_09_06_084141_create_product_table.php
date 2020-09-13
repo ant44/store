@@ -24,7 +24,7 @@ class CreateProductTable extends Migration
             $table->string('image');
             $table->string('category')->defined('all_category');
             $table->string('discount')->nullable();
-            $table->string('count')->nullable();
+            $table->integer('count')->nullable();
             $table->string('size')->nullable();
             $table->string('weight')->nullable();
             $table->integer('rate')->default(1);

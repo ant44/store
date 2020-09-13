@@ -28,4 +28,5 @@ Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/dashboard', 'adminPanel\dashbordController@index')->name('dashboard');
 Route::get('/dashborad/products', 'adminPanel\productController@index')->name('dashborad.product.index');
 Route::get('/dashborad/products/create', 'adminPanel\productController@create')->name('dashborad.product.create');
+Route::post('/dashborad/products/store', 'adminPanel\productController@store')->name('dashborad.product.store');
 Route::get('/logoutUser', 'Auth\LogoutController@Logout')->name('logoutUser');
