@@ -75,7 +75,7 @@
                                     </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($hameye_mahsolat as $product)
+                                    {{-- @foreach($hameye_mahsolat as $product)
                                         <tr>
                                             <td>{{ $product->id }}</td>
                                             <td>{{ $product->title }}</td>
@@ -112,7 +112,7 @@
                                                 <a href="{{ route('dashboard.product.destroy' , $product->id) }}" style="color: red"><i class="fas fa-trash-alt"></i></a>
                                             </td>
                                         </tr>
-                                    @endforeach
+                                    @endforeach --}}
                                     </tbody>
 
                                 </table>

@@ -28,13 +28,13 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
-                    @if(session('message'))
+                    @if (session('message'))
                         <div class="alert alert-success col-sm-3">
                             <li>{{ Session::get('message') }}</li>
                         </div>
                     @endif
 
-                    @if(session('error'))
+                    @if (session('error'))
                         <div class="alert alert-success col-sm-3">
                             <li>{{ Session::get('error') }}</li>
                         </div>
@@ -48,52 +48,60 @@
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
-                            @if(\App\ProductCategory::all()->count() > 0)
+                            @if (\App\ProductCategory::all()->count() > 0)
                                 <table id="example2" class="table table-bordered table-hover">
                                     <thead>
-                                    <tr>
-                                        <th>ردیف</th>
-                                        <th>نام دسته بندی</th>
-                                        <th>slug</th>
-                                        <th>توضیحات</th>
-                                        <th>تصویر</th>
-                                        <th>دسته بندی پدر</th>
-                                        <th>وضعیت</th>
-                                        <th>عملیات</th>
-                                    </tr>
+                                        <tr>
+                                            <th>ردیف</th>
+                                            <th>نام دسته بندی</th>
+                                            <th>slug</th>
+                                            <th>توضیحات</th>
+                                            <th>تصویر</th>
+                                            <th>دسته بندی پدر</th>
+                                            <th>وضعیت</th>
+                                            <th>عملیات</th>
+                                        </tr>
                                     </thead>
                                     <tbody>
-                                    @foreach($allCategory as $category)
-                                        <tr>
-                                            <td>{{ $category->id }}</td>
-                                            <td>{{ $category->topic }}</td>
-                                            <td>{{ $category->slug }}</td>
-                                            <td>{{ $category->description }}</td>
-                                            <td>
-                                                <img width="100" src="{{ url('') }}{{ config('cms-setting.url_product_category') }}{{ $category->image }}" alt="{{ $category->topic }}">
-                                            </td>
-                                            <td>{{ $category->parent_name($category->parent_id) }}</td>
-                                            <td>
-                                                @if($category->status == 0)
-                                                    پیش نویس
-                                                @else
-                                                    منتشر شده
-                                                @endif
-                                            </td>
-                                            <td>
-{{--                                                                                                <a href="{{ route('admin.product.findProduct' , $category->id) }}">ویرایش</a>--}}
-                                                <a href="#" style="color: gray"><i class="fas fa-pencil-alt"></i></a>
-                                                <a href="#" style="color: red"><i class="fas fa-trash-alt"></i></a>
-                                            </td>
-                                        </tr>
-                                    @endforeach
+                                        @foreach ($allCategory as $category)
+                                            <tr>
+                                                <td>{{ $category->id }}</td>
+                                                <td>{{ $category->topic }}</td>
+                                                <td>{{ $category->slug }}</td>
+                                                <td>{{ $category->description }}</td>
+                                                <td>
+                                                    <img width="100" src="{{ url('');
+                                                    __BLADE__;
+                                                    __BLADE__;
+                                                    config('cms-setting.url_product_category');
+                                                    __BLADE__;
+                                                    __BLADE__;
+                                                    $category->image }}" alt="{{ $category->topic }}">
+                                                </td>
+                                                <td>{{ $category->parent_name($category->parent_id) }}</td>
+                                                <td>
+                                                    @if ($category->status == 0)
+                                                        پیش نویس
+                                                    @else
+                                                        منتشر شده
+                                                    @endif
+                                                </td>
+                                                <td>
+                                                    {{-- <a
+                                                        href="{{ route('admin.product.findProduct', $category->id) }}">ویرایش</a>--}}
+                                                    <a href="#" style="color: gray"><i class="fas fa-pencil-alt"></i></a>
+                                                    <a href="#" style="color: red"><i class="fas fa-trash-alt"></i></a>
+                                                </td>
+                                            </tr>
+                                        @endforeach
                                     </tbody>
 
                                 </table>
 
                             @else
                                 <h4>دسته بندی در سایت موجود نیست</h4>
-                                <a class="btn btn-outline-success" href="{{ route('dashboard.product.create') }}">اولین دسته بندی خود را بساز</a>
+                                <a class="btn btn-outline-success" href="{{ route('dashboard.product.create') }}">اولین دسته
+                                    بندی خود را بساز</a>
                             @endif
                         </div>
 
@@ -127,4 +135,3 @@
 
     </script>
 @stop
-
